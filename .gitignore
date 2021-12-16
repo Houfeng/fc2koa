@@ -1,0 +1,14 @@
+*.log
+.DS_Store
+node_modules/
+.nyc_output/
+coverage/
+build/
+dist/
+types/
+logs/
+demo/
+demo-s4w/
+.idea/
+.awcache/
+*.zip

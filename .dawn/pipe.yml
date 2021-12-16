@@ -1,0 +1,36 @@
+clean:
+  - name: clean
+    target:
+      - dist
+      - types
+      - coverage
+      - logs
+
+dev:
+  - name: shell
+    script:
+      - dn run clean
+      - dn run build
+      
+test:
+  - name: shell
+    script:
+      - eslint ./src/**/*.ts --fix
+
+build:
+  - name: shell
+    script:
+      - dn run clean
+      - tsc 
+  - name: clean
+    target:
+      - ./dist/**/*.tsbuildinfo
+
+publish:
+  - name: version
+  - name: shell
+    script:
+      - dn test
+      - dn build
+      - npm pu
+  - name: submitter

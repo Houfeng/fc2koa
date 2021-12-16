@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/",
+    "declarationDir": "./types/",
+    "sourceMap": false,
+    "declaration": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./@types/*.d.ts"
+, "@types/global.ts"  ],
+  "exclude": [
+    "**/node_modules/**/*.*",
+    "**/types/**/*.*"
+  ]
+}

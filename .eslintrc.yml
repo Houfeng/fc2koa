@@ -1,0 +1,8 @@
+parser: '@typescript-eslint/parser'
+extends: eslint:recommended
+rules:
+  semi: [2, 'always']
+  quotes: [2, 'double']
+  no-undef: 0
+  no-unused-vars: 0
+  no-async-promise-executor: 0

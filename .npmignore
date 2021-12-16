@@ -1,0 +1,15 @@
+*.log
+.DS_Store
+node_modules/
+.nyc_output/
+coverage/
+logs/
+src/
+demo/
+demo-s4w/
+tsconfig.json
+.idea/
+.awcache/
+.gitignore
+.dawn/
+*.zip
