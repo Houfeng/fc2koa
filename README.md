@@ -5,10 +5,12 @@ fc2koa 可以便捷的在 Aliyun 的 Serverless 中跑 koa 应用，目前暂仅
 ## 安装
 
 ```bash
-npm install fc2koa
+npm install fc2koa --save
 ```
 
 ## 使用
+
+通过 fc2koa 在 Aliyun Serverless 的函数中使用 koa 示例
 
 ```js
 const Koa = require('koa');
